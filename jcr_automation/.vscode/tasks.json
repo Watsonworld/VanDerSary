@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "JCR: set up Python",
+      "type": "shell",
+      "command": "python3 scripts/setup_env.py",
+      "windows": {"command": "py scripts/setup_env.py"},
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "JCR: run monthly report",
+      "type": "shell",
+      "command": ".venv/bin/python main.py",
+      "windows": {"command": ".venv/Scripts/python.exe main.py"},
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}
